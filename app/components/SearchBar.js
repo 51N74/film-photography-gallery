@@ -18,7 +18,7 @@ const SearchBar = ({ onSearch }) => {
         onChange={(e) => setQuery(e.target.value)}
         onKeyUp={handleSearch} // Trigger search on key up for real-time feedback
       />
-      <button className="btn btn-primary ml-2" onClick={handleSearch}>
+      <button className="btn btn-outline btn-primary ml-2" onClick={handleSearch}>
         Search
       </button>
     </div>

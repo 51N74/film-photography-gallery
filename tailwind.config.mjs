@@ -6,6 +6,9 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -17,6 +20,6 @@ export default {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["dim"],
+    themes: ["nord"],
   },
 };

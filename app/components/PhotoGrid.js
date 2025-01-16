@@ -27,12 +27,12 @@ const PhotoGrid = ({ photos }) => {
   };
 
   return (
-    <div>
+    <div className='container-xl bg-neutral-content'>
       <SearchBar onSearch={handleSearch} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+      <div className="columns-1 sm:columns-2 md:columns-3 gap-4 p-4">
         {filteredPhotos.map((photo) => (
-          <div key={photo.id} className="cursor-pointer" onClick={() => handlePhotoClick(photo)}>
-            <img src={photo.url} alt={photo.title} className="rounded-lg shadow-md" />
+          <div key={photo.id} className="cursor-pointer mb-4 break-inside" onClick={() => handlePhotoClick(photo)}>
+            <img src={photo.url} alt={photo.title} className="w-full rounded-lg shadow-md cursor-pointer" />
           </div>
         ))}
       </div>
