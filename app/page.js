@@ -1,13 +1,16 @@
 'use client'
 import React, { useState } from 'react';
 import PhotoGrid from './components/PhotoGrid';
-import SearchBar from './components/SearchBar';import Image from "next/image";
+import SearchBar from './components/SearchBar';
+import Image from "next/image";
 
 export default function Home() {
   const photos = [
     {
       id: '1',
       url: '/images/gallery/kodak-colorplus-200/color200-1.webp',
+      Films: 'Kodak Colorplus 200',
+      Type:'135 mm',
       title: 'Sunset Over the Hills',
       description: 'A beautiful sunset over rolling hills.',
       tags: ['colorplus', 'nature', 'landscape']
@@ -114,7 +117,7 @@ export default function Home() {
   return (
     <>
     <div>
-    
+
       <PhotoGrid photos={filteredPhotos} />
     </div>
     </>
